@@ -1,0 +1,117 @@
+body,#rightCol {
+    background-color: #e6ebf2!important;
+}
+
+.navbar,
+.column1,
+.graph,
+.overview,
+.user,
+.bell ,
+div.row_1{
+    background-color: #ffffff;
+    cursor: pointer;
+}
+.column1{
+  background-color: #ffffff;
+}
+.icon-menu {
+    color: #568cf9;
+}
+div.row_1:hover {
+    background-color: #6492dc;
+    color: aliceblue;
+}
+
+span.icon-menu:hover {
+    color: aliceblue;
+}
+
+div.active_row {
+    background-color: #6492dc;
+    color: white;
+}
+
+
+a.sidebar {
+    background-color: #ffffff;
+    font-size: 14px;
+    width: 100%;
+    
+}
+
+a.sidebar:hover {
+    background-color: #ecedf1;
+    border-right: solid #2e5ebe;
+    font-weight: bold;
+}
+
+.innercolumn {
+    background-color: #f2f4f8;
+}
+
+div.column2 {
+    background-color: #ecedf1;
+}
+
+.pay {
+    background-color: #6492dc;
+
+}
+
+.transfer {
+    background-color: #7da2dd;
+}
+
+.nb {
+    background-color: #ffffff;
+
+}
+
+.cardblue {
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.2), transparent 50%), #7DA0C4;
+}
+
+.cardbrown {
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.2), transparent 50%), #C4A57D;
+}
+
+.close-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #666666;
+}
+
+table {
+    font-size: small;
+}
+.green
+{
+    list-style-type: disc;
+    color: #29b35e;
+}
+.red
+{
+    list-style-type: disc;
+    color: #ff3e03;
+}
+@media screen and (min-width:1200px) {
+  div.inner_row{
+      height: 94%;
+    }
+  
+}
+@media screen and (min-width:1500px) {
+    div.inner_row{
+        height: 96%;
+      }
+    
+  }
+*::-webkit-scrollbar
+{
+    display: none;
+}
+.menu{
+   width:16.6%;
+   
+}

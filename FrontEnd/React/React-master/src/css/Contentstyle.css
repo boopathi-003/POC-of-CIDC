@@ -1,0 +1,13 @@
+body
+{
+    background-color: rgb(250, 252, 251) !important;
+}
+div.profile > img
+{
+   
+   max-width: 100%;
+}
+div.profile
+{
+    width: 85%;
+}

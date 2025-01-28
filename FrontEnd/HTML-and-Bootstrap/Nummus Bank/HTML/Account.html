@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Overview</title>
+  <link rel="stylesheet" href="/CSS/Account.css" />
+  <link rel="stylesheet" href="/CSS/bootstrap.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700 display=swap" rel="stylesheet" />
+</head>
+
+<body class="m-0">
+  <div class="container-fluid p-0 m-0 ">
+    <div class="row m-0 vh-100">
+      <!-- column-1 -->
+       <div class="column1 col-xl-2 col-lg-2 col-md-3 col-sm-2 p-0  ">
+      <nav class="  vh-100   d-none d-lg-block text-secondary text-opacity-75  ">
+        <a class="d-flex justify-content-center  bg-white position-fixed m-0 p-0 " href="/HTML/login.html"><img src="/Assets/Nb2.png" class="w-50 mx-3 mb-2 mt-1   image-fluid  d-block"
+          alt="" /></a>
+        <ul class="menu nav  flex-column fs-6 navbar-text mx-0 m-0  ms-0 position-fixed mt-5 fw-semibold">
+          <li class="nav-item ">
+            <a class="sidebar nav-link mb-3 p-2 "
+              href="/HTML/Overview.html"><img class="" src="/Assets/Overview.png " width="18px" height="18px" alt="" />
+              Overview</a>
+          </li>
+          <li class="nav-item ">
+            <a class="sidebar  py-3 border-end border-primary bg-secondary bg-opacity-10 nav-link mb-3 p-2 " href="/HTML/Account.html"><img class="" src="/Assets/Accounts.png"
+                width="18px" height="18px" alt="" /> Account</a>
+          </li>
+          <li class="nav-item">
+            <a class="sidebar  nav-link  p-2 mb-3" href=""><img class="" src="/Assets/usd-circle.png" width="18px"
+                height="18px" alt="" /> Payments</a>
+          </li>
+          <li class="nav-item">
+            <a class="sidebar  p-2 nav-link mb-3" href=""><img class="" src="/Assets/Cards.png" width="18px"
+                height="18px" alt="" /> Cards</a>
+          </li>
+          <li class="nav-item">
+            <a class="sidebar  p-2 nav-link mb-3" href=""><img class=" " src="/Assets/Transactions.png" width="18px"
+                height="18px" alt="" /> Transaction</a>
+          </li>
+          <li class="nav-item">
+            <a class="sidebar  p-2  nav-link mb-3" href=""><img class="" src="/Assets/Templates.png" width="18px"
+                height="18px" alt="" /> Template</a>
+          </li>
+          <li class="nav-item">
+            <a class="sidebar  p-2 nav-link mb-3" href=""><img class="" src="/Assets/currency.png" width="18px"
+                height="18px" alt="" /> Current
+              Exchange</a>
+          </li>
+          <li class="nav-item">
+            <a class="sidebar  p-2  nav-link " href=""><img class="" src="/Assets/ATM_Locations.png" width="18px"
+                height="18px" alt="" /> ATM
+              Location</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+      <!--Toggle Button -->
+
+      <div class="col-12 col-lg-10 col-xl-10 px-0" id="rightCol">
+        <ul style="list-style: none;" class="d-flex px-0 m-0 flex-wrap text-center bg-white sticky-top">
+
+          <li class="nb m-0 flex-grow-1 d-inline-block d-lg-none bg-white  text-start px-2" id="Logo">
+            <img src="/Assets/Nb2_Small.png" class="p-0" />
+          </li>
+          <li
+            class="overview m-0 flex-grow-1 d-none d-lg-inline-block text-start text-dark text-opacity-50 fw-bold py-3 ps-2 ps-sm-3 "
+            id="overview">Accounts</li>
+          <li class="user flex-shrink-1 py-3 px-2  m-0 ">
+            <img src="/Assets/user.png" width="20px" height="20px" />
+          </li>
+          <li class="bell flex-shrink-1 py-3 px-2 m-0 border-end border-start">
+            <button type="button" class="btn p-0 mx-3 m-0 position-relative " style="width: 24px; height:24px;">
+              <img class="" src="/Assets/bell.png" width="24px" height="24px">
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                5
+                <span class="visually-hidden">unread messages</span>
+              </span>
+            </button>
+          </li>
+          <li class="bell flex-shrink-1 py-3 px-2 m-0"> </button>
+            <!-- toggle button end -->
+            <img class="mx-2 m-0 " src="/Assets/setting.png" width="24px" height="24px" />
+          </li>
+          <li class=" nb border-start  p-2 pe-0  d-inline-block d-lg-none m-0">
+            <button class="btn" data-bs-toggle="offcanvas" data-bs-target="#collapseOne" aria-controls="collapseOne"
+              type="button"><span class="icon-menu">&#9776;</span></button>
+            <div class="w-auto offcanvas offcanvas-end" id="collapseOne" aria-labelledby="collapseOne" tabindex="-1">
+              <div class="offcanvas-header text-center d-flex justify-content-between">
+                <img src="/Assets/Nb2.png" />
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="mt-3 offcanvas-body p-0">
+                <div class="col-12 w-auto text-start">
+                  <img class="me-2 ms-3" src="/Assets/Overview.png" width="18px" height="18px" />
+                  <p class="d-inline-block text-center ps-0 p-3 mb-0 ">Overview</p>
+                </div>
+                <div class="col-12 w-auto text-start">
+                  <img class="me-2 ms-3" src="/Assets/Accounts.png" width="18px" height="18px" />
+                  <p class="d-inline-block text-center ps-0 p-3 mb-0 ">Accounts</p>
+                </div>
+                <div class="col-12 w-auto text-start">
+                  <img class="me-2 ms-3" src="/Assets/usd-circle.png" width="18px" height="18px" />
+                  <p class="d-inline-block text-center ps-0 p-3 mb-0 ">Payments</p>
+                </div>
+                <div class="col-12 w-auto text-start">
+                  <img class="me-2 ms-3" src="/Assets/Cards.png" width="18px" height="18px" />
+                  <p class="d-inline-block text-center ps-0 p-3 mb-0 ">Cards</p>
+                </div>
+                <div class="col-12 w-auto text-start">
+                  <img class="me-2 ms-3" src="/Assets/Transactions.png" width="18px" height="18px" />
+                  <p class="d-inline-block ps-0 p-3 mb-0 ">Transactions</p>
+                </div>
+                <div class="col-12 w-auto text-start">
+                  <img class="me-2 ms-3" src="/Assets/Templates.png" width="18px" height="18px" />
+                  <p class="d-inline-block text-center ps-0 p-3 mb-0 ">Templates</p>
+                </div>
+                <div class="col-12 w-auto text-start">
+                  <img class="me-2 ms-3" src="/Assets/currency.png" width="18px" height="18px" />
+                  <p class="d-inline-block text-center ps-0 p-3 mb-0 ">Current Exchange</p>
+                </div>
+                <div class="col-12 w-auto text-start">
+                  <img class="me-2 ms-3" src="/Assets/ATM_Locations.png" width="18px" height="18px" />
+                  <p class="d-inline-block text-center ps-0 p-3 mb-0 ">ATM Locations</p>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <!-- toggle button end -->
+
+        <!-- column-2 -->
+        <div class="inner_row row m-0 ">
+          <div class="inner_row1  col-xl-3 col-lg-4 bg-light bg-opacity-75 col-md-12 col-sm-12 px-md-4 px-sm-5 p-0 m-0">
+            <div class="p-0 m-0">
+              <h5 class="  mt-4 mx-xl-3 ">All Accounts</h5>
+
+              <p class=" favourite  text-secondary lh-1 mx-xl-3 ">All active and inactive accounts are listed below</p>
+            </div>
+            <div
+              class=" row m-0 p-0 gap-lg-2 gap-3  flex-lg-wrap flex-nowrap overflow-auto ">
+
+              <!-- inner row 1 -->
+              <div class="row_1 col-xl-10 col-lg-12 col-md-5 col-10  flex-xl-fill mx-0 rounded my-1 ">
+            
+                  <div class=" row p-0 m-0 mt-4 d-flex justify-content-between">
+                    <div class="col-8  p-0 fw-bold">Our account</div>
+
+                    <div class="col-4 text-xl-end text-end text-sm-center "><span
+                        class="icon-menu ">&#9776;</span>
+                    </div>
+                  </div>
+                  <div class=" row m-0 mt-2 d-flex justify-content-between">
+                    <div class="col-4 col-lg-3 p-0">Available</div>
+                    <div class="col-4 p-0">. . . . . . . .</div>
+                    <div class="col-4 p-0">$10,854.00</div>
+                  </div>
+                  <div class="row m-0 mt-2 mb-4 d-flex justify-content-between">
+                    <div class="col-4 col-lg-3 p-0">Reserved</div>
+                    <div class="col-4 p-0">. . . . . . . .</div>
+                    <div class="col-4 p-0">$1501.00</div>
+                  </div>
+                
+              </div>
+
+              <!-- inner row 2 -->
+              <div class="active_row col-xl-10 col-lg-12 col-md-5 col-10  flex-xl-fill mx-0 rounded   my-1 ">
+                <a class="text-decoration-none text-white" href="">
+                  <div class=" row p-0 m-0 mt-4 d-flex justify-content-between">
+                    <div class="col-8  p-0 fw-bold">My private account</div>
+
+                    <div class="col-4 text-xl-end text-end text-sm-center "><span
+                        class="icon-menu text-white">&#9776;</span>
+                    </div>
+                  </div>
+                  <div class=" row m-0 mt-2 d-flex justify-content-between">
+                    <div class="col-4 col-lg-3 p-0">Available</div>
+                    <div class="col-4 p-0">. . . . . . . .</div>
+                    <div class="col-4 p-0">$10,854.00</div>
+                  </div>
+                  <div class="row m-0 mt-2 mb-4 d-flex justify-content-between">
+                    <div class="col-4 col-lg-3 p-0">Reserved</div>
+                    <div class="col-4 p-0">. . . . . . . .</div>
+                    <div class="col-4 p-0">$1501.00</div>
+                  </div>
+                </a>
+              </div>
+              <!-- inner row 3 -->
+              <div class="row_1 col-xl-10 col-lg-12 col-md-5 col-10  flex-xl-fill mx-0 rounded  my-1  ">
+                  <div class=" row p-0 m-0 mt-4 d-flex justify-content-between">
+                    <div class="col-8  p-0 fw-bold">Foriegn</div>
+
+                    <div class="col-4 text-xl-end text-end text-sm-center "><span
+                        class="icon-menu ">&#9776;</span>
+                    </div>
+                  </div>
+                  <div class=" row m-0 mt-2 d-flex justify-content-between">
+                    <div class="col-4 col-lg-3 p-0">Available</div>
+                    <div class="col-4 p-0">. . . . . . . .</div>
+                    <div class="col-4 p-0">$10,854.00</div>
+                  </div>
+                  <div class="row m-0 mt-2 mb-4 d-flex justify-content-between">
+                    <div class="col-4 col-lg-3 p-0">Reserved</div>
+                    <div class="col-4 p-0">. . . . . . . .</div>
+                    <div class="col-4 p-0">$1501.00</div>
+                  </div>
+              </div>
+              <!-- inner row 4 -->
+              <div class="row_1 col-xl-10 col-lg-12 col-md-5 col-10  flex-xl-fill mx-0 rounded  ">
+        
+                  <div class=" row p-0 m-0 mt-4 d-flex justify-content-between">
+                    <div class="col-8  p-0 fw-bold">Savings</div>
+
+                    <div class="col-4 text-xl-end text-end text-sm-center "><span
+                        class="icon-menu ">&#9776;</span>
+                    </div>
+                  </div>
+                  <div class=" row m-0 mt-2 d-flex justify-content-between">
+                    <div class="col-4 col-lg-3 p-0">Available</div>
+                    <div class="col-4 p-0">. . . . . . . .</div>
+                    <div class="col-4 p-0">$10,854.00</div>
+                  </div>
+                  <div class="row m-0 mt-2 mb-4 d-flex justify-content-between">
+                    <div class="col-4 col-lg-3 p-0">Reserved</div>
+                    <div class="col-4 p-0">. . . . . . . .</div>
+                    <div class="col-4 p-0">$1501.00</div>
+                  </div>
+              </div>
+              <!-- inner row 5 -->
+              <div class="row_1 col-xl-10 col-lg-12 col-md-5 col-10  flex-xl-fill mx-0 rounded   my-1 ">
+               
+                  <div class=" row p-0 m-0 mt-4 d-flex justify-content-between">
+                    <div class="col-8  p-0 fw-bold">Investments</div>
+
+                    <div class="col-4 text-xl-end text-end text-sm-center "><span
+                        class="icon-menu ">&#9776;</span>
+                    </div>
+                  </div>
+                  <div class=" row m-0 mt-2 d-flex justify-content-between">
+                    <div class="col-4 col-lg-3 p-0">Available</div>
+                    <div class="col-4 p-0">. . . . . . . .</div>
+                    <div class="col-4 p-0">$10,854.00</div>
+                  </div>
+                  <div class="row m-0 mt-2 mb-4 d-flex justify-content-between">
+                    <div class="col-4 col-lg-3 p-0">Reserved</div>
+                    <div class="col-4 p-0">. . . . . . . .</div>
+                    <div class="col-4 p-0">$1501.00</div>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <!--col-2 row-1 end -->
+
+          <!-- Column-3 row-1 -->
+          <div class="col-xl-9 col-lg-8 col-md-12 m-0 ">
+            <div class="row m-0 p-0 mt-3 border-bottom">
+              <div class="row d-flex m-0 px-xl-2 px-0">
+                <div class="col-xl-4 col-md-3  fs-6 fw-semibold mb-2 p-0">Account Details</div>
+                <div class="col-xl-8 col-md-9 col-sm-12 text-md-end p-0">
+                  <button type="button" class="pay btn bg-primary bg-opacity-75 text-white rounded border px-5">
+                    Pay
+                  </button>
+                  <button type="button" class="transfer btn bg-primary bg-opacity-10 text-primary px-5 border rounded">
+                    Transfer
+                  </button>
+                </div>
+              </div>
+              <div class="row d-flex flex-md-row m-0  mt-3 border-bottom px-0">
+                <div class="col-xl-3 col-lg-4 col-md-4 col-sm-12 nav-item  nav nav-underline p-0 ">
+                  <a class="nav-link active text-primary  " href="#">General Information</a>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-3 col-sm-12 nav-item nav  nav-underline">
+                  <a class="nav-link  text-secondary" href="#">Transaction</a>
+                </div>
+                <div class="col-lg-2 col-xl-2 col-md-2 col-sm-12 nav-item nav nav-underline">
+                  <a class="nav-link text-secondary" href="#">Bills</a>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-3  col-sm-12 nav-item nav  nav-underline">
+                  <a class="nav-link text-secondary" href="#">Statistics</a>
+                </div>
+
+              </div>
+            </div>
+            <!-- inner row-1 end -->
+
+            <!-- inner row-2  -->
+            <div class="row d-flex m-0 mt-3  ">
+              <div class="row m-0 gap-3 p-0 ">
+                <div class="col-12 col-xl-3 col-lg-5 col-md-4 text bg-white rounded py-2">
+                  <div class="mt-1 text-secondary ">AVAILABLE BALANCE</div>
+                  <div class="mt-2 text-success text-opacity-75 fw-bold py-1">$10,854,00 USD</div>
+                </div>
+                <div class="col col-xl-3 col-lg-5 col-md-4 bg-white rounded py-2">
+                  <div class="mt-1 text-secondary">RESERVED FUNDS</div>
+                  <div class="mt-2 text-danger fw-bold py-1 ">$1,501,00 USD</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- inner row-3 -->
+            <div style="font-size: small;" class="row d-flex bg-white m-0 mt-3  rounded justify-content-center">
+              <div class="row border-bottom m-0 p-0 ">
+                <div class="col py-3  fw-bold fs-6 ms-3">Details</div>
+              </div>
+              <div class="row mt-2  text-secondary text-opacity-50 fw-semibold">
+                <div class="col-md-4 col-sm-12 mt-2">
+                  <div class="card-body">
+                    <div style="font-size: small;" class="form-group">
+                      <label for="usr">ACCOUNT NAME</label>
+                      <input type="text" class="mt-2 py-2 form-control bg-secondary bg-opacity-10 "
+                        placeholder="My private account" id="usr" />
+                    </div>
+                    <div class="form-group mt-2">
+                      <label for="pwd">STATUS</label>
+                      <input type="password" class="mt-2 py-2  form-control bg-secondary bg-opacity-10"
+                        placeholder="Active" id="pwd" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-12 mt-2 m-0 ">
+                  <div class="card-body ">
+                    <div class="form-group">
+                      <label for="usr">ACCOUNT NUMBER</label>
+                      <input type="text" class="mt-2 py-2  form-control bg-secondary bg-opacity-10 "
+                        placeholder="658459211177" id="usr" />
+                    </div>
+                    <div class="form-group mt-2">
+                      <label for="pwd">OWNER</label>
+                      <input type="password" class="mt-2 py-2  form-control bg-secondary bg-opacity-10"
+                        placeholder="John M.Black" id="pwd" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-12 mt-2">
+                  <div class="card-body">
+                    <div class="form-group">
+                      <label for="usr">ACCOUNT NAME</label>
+                      <input type="text" class="mt-2 py-2  form-control bg-secondary bg-opacity-10 "
+                        placeholder="Checking account" id="usr" />
+                    </div>
+                    <div class="form-group mt-2">
+                      <label for="pwd">DATE OPENED</label>
+                      <input type="password" class="mt-2  py-2 form-control bg-secondary bg-opacity-10 "
+                        placeholder="12 Dec 2020" id="pwd" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-2 mb-4  text-secondary text-opacity-50 fw-semibold">
+                <div class="col-md-8">
+                  <div class="form-group">
+                    <label for="pwd">AUTHORIZED PERSONS</label>
+                    <input type="password" class="mt-2 py-2  form-control bg-secondary bg-opacity-10 fw-semibold"
+                      placeholder="None" id="pwd" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- inner-row 4 -->
+            <div class="col-xl-8  col-sm-12 ">
+              <div class="row bg-white m-0 mt-4 rounded ">
+                <div class="row border-bottom m-0 mt-3 pb-1">Connected Cards</div>
+                <div class="row ">
+                  <div class=" col-xl-6 col-lg-7 col-md-5 p-0">
+                    <div class="cardbrown card-body card-brown mx-md-3 mx-3 mt-3 mb-3 rounded text-white">
+                      <div class="row m-0 ">
+                        <div class="row m-0 mt-2 mb-2">Visa</div>
+                        <div class="row p-0 m-0">
+                          <div class="col-3">1655</div>
+                          <div class="col-3">8462</div>
+                          <div class="col-3">1154</div>
+                          <div class="col-3">2998</div>
+                        </div>
+                        <div class="row m-0 p-0">
+                          <div class="col-12 mt-1 text-end fs-6">
+                            <small> VALID THIRU</small>
+                          </div>
+                        </div>
+                        <div class="row text-start mt-1 mb-1">
+                          <div class="col-8">Sarah J.black</div>
+                          <div class="col-4">01/23</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class=" col-xl-6 col-lg-5 col-sm-5  mt-3 ">
+                    <div class="card-body border border-tertiary mx-md-0 mx-3  mb-3 rounded ">
+                      <div class="row m-0 mb-4">
+                        <div class="row m-0 mt-2 "></div>
+                        <div class="row p-0 m-0 "> </div>
+                        <div class="row m-0 p-0 mb-1">
+                          <div class=" add_image col-12 mt-3 text-center fs-1 ">+</div>
+                        </div>
+                        <div class="row text-start mt-2 mb-1">
+                          <div class="col-12"></div>
+                          <div class="col-4"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- inner rows end -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="/JS/bootstrap.bundle.js"></script>
+
+</html>

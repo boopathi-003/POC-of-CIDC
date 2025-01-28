@@ -1,0 +1,77 @@
+body,#rightCol {
+    background-color: #e6ebf2!important;
+}
+
+.navbar,
+.column1,
+.graph,
+.overview,
+.user,
+.bell {
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.icon-menu {
+    color: #568cf9;
+}
+
+div.row_1  {
+    background-color: #ffffff;
+}
+div.row_1:hover {
+    background-color: #6492dc;
+    color: aliceblue;
+} 
+span.icon-menu:hover {
+    color: aliceblue;
+}
+
+div.active_row {
+  
+    background-color: #6492dc;
+    color: white;
+}
+
+a.sidebar {
+    background-color: #ffffff;
+    font-size: 14px;
+}
+
+a.sidebar:hover {
+    background-color: #ecedf1;
+    border-right: solid #2e5ebe;
+    font-weight: bold;
+}
+
+.innercolumn {
+    background-color: #f2f4f8;
+}
+
+.cardbrown {
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.2), transparent 50%), #C4A57D;
+}
+
+div.add_image {
+    cursor: pointer;
+}
+@media screen and (min-width:1200px) {
+    div.inner_row{
+        height: 94%;
+      }
+    
+  }
+  @media screen and (min-width:1500px) {
+      div.inner_row{
+          height: 96%;
+        }
+      
+    }
+*::-webkit-scrollbar
+{
+    display: none;
+}
+.menu{
+    width:16.6%;
+    
+ }
