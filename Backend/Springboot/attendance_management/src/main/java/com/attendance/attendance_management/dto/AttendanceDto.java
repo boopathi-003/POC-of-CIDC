@@ -13,10 +13,10 @@ import lombok.Setter;
 public class AttendanceDto {
     private Long attendanceId;
     private String date;
-    private String RecordIn;
+    private String recordIn;
     private UserInfo user;
-    private String RecordOut;
-    private String Status;
+    private String recordOut;
+    private String status;
     private  String leaveReason;
 
 

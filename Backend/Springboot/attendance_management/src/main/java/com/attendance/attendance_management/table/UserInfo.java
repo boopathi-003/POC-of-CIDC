@@ -19,16 +19,21 @@ public class UserInfo {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "user_id")
     private Long userId;
-    @Column(name = "name")
+
+    @Column(name = "name", nullable = false)
     private String name;
-    @Column(name = "roll")
+
+    @Column(name = "roll", nullable = false)
     private String roll;
-    @Column(name = "department")
+
+    @Column(name = "department", nullable = false)
     private String department;
+
     @Column(name = "is_active")
-    private Boolean isActive = true;
+    private boolean isActive = true;
+
     @Column(name = "is_marked")
-    private Boolean isMarked = true;
+    private boolean isMarked = false;
 
     public UserInfo(long l, String john, String teacher, String cse, boolean b) {
     }

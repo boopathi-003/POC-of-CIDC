@@ -5,6 +5,7 @@ import com.attendance.attendance_management.dto.LeaveDto;
 import com.attendance.attendance_management.dto.UserDto;
 import com.attendance.attendance_management.services.AttendanceService;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
@@ -18,6 +19,7 @@ import java.util.stream.Collectors;
 @CrossOrigin
 @RequestMapping("/attendance")
 @RequiredArgsConstructor
+@Slf4j
 class AttendanceController {
 
     private final AttendanceService attendanceService;
@@ -37,7 +39,9 @@ class AttendanceController {
     @RequestMapping("/id/{id}")
     @PreAuthorize("hasRole('ADMIN') or hasRole('USER')")
     public ResponseEntity<AttendanceDto> getAttendanceById(@PathVariable String id) {
+        log.info("getAttendanceById");
         if (id == null || id.trim().isEmpty() || id.equalsIgnoreCase("null")) {
+            log.warn("getAttendanceById: id is null or empty");
             return ResponseEntity.badRequest().body(null);
         }
 

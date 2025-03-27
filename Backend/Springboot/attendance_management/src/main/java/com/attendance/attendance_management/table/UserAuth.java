@@ -30,7 +30,7 @@ public class UserAuth implements UserDetails {
     @Column(name = "password")
     private String password;
     @Column(name = "is_active")
-    private Boolean isActive = true;
+    private boolean isActive = true;
     @Column(name = "role")
     private String role;
 
@@ -45,7 +45,7 @@ public class UserAuth implements UserDetails {
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        return List.of(new SimpleGrantedAuthority("ROLE_" + role.toUpperCase()));
+        return List.of(new SimpleGrantedAuthority("ROLE_" + this.role.toUpperCase()));
     }
 
 

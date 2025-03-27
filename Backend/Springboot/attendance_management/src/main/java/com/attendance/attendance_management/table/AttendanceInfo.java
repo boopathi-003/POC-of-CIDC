@@ -23,8 +23,8 @@ public class AttendanceInfo {
     @JoinColumn(name = "user_id", referencedColumnName = "user_id")
     private UserInfo user;
     private String date;
-    private String RecordIn;
-    private String RecordOut;
+    private String recordIn;
+    private String recordOut;
     private String status;
     private String reason;
 

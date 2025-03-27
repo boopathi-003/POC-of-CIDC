@@ -34,7 +34,7 @@ class UserAuthControllerTest {
     @BeforeEach
     void setUp() {
 
-        userAuth = new UserAuth(1L, "john", "j@123", true);
+//        userAuth = new UserAuth(1L, "john", "j@123", true);
 
     }
 

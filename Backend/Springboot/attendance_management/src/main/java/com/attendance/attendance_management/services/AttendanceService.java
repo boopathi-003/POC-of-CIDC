@@ -43,24 +43,24 @@ public class AttendanceService {
         if (attendanceExists) {
             throw new RuntimeException("Attendance record already exists for the given user and date.");
         }
+       else {
+            AttendanceInfo attendanceInfo = this.attendanceMapper.setEntity(attendanceDto);
+            this.attendanceRepository.save(attendanceInfo);
 
-        AttendanceInfo attendanceInfo = this.attendanceMapper.setEntity(attendanceDto);
-        this.attendanceRepository.save(attendanceInfo);
+            this.userRepository.markAttendance(attendanceDto.getUser().getUserId());
 
+            if (("absent".equalsIgnoreCase(attendanceDto.getStatus()) ||
+                    "Planned leave".equalsIgnoreCase(attendanceDto.getStatus()) ||
+                    "Sick leave".equalsIgnoreCase(attendanceDto.getStatus())) &&
+                    "-".equals(attendanceDto.getRecordIn()) && "-".equals(attendanceDto.getRecordOut())) {
 
-        this.userRepository.markAttendance(attendanceDto.getUser().getUserId());
-
-        if (("absent".equalsIgnoreCase(attendanceDto.getStatus()) ||
-                "Planned leave".equalsIgnoreCase(attendanceDto.getStatus()) ||
-                "Sick leave".equalsIgnoreCase(attendanceDto.getStatus())) &&
-                "-".equals(attendanceDto.getRecordIn()) && "-".equals(attendanceDto.getRecordOut())) {
-
-            LeaveInfo leaveInfo = new LeaveInfo();
-            leaveInfo.setLeaveDate(attendanceDto.getDate());
-            leaveInfo.setUser(this.userRepository.findById(attendanceDto.getUser().getUserId())
-                    .orElseThrow(() -> new RuntimeException("User not found")));
-            leaveInfo.setLeaveReason(attendanceDto.getLeaveReason());
-            this.leaveService.addLeaveForm(leaveInfo);
+                LeaveInfo leaveInfo = new LeaveInfo();
+                leaveInfo.setLeaveDate(attendanceDto.getDate());
+                leaveInfo.setUser(this.userRepository.findById(attendanceDto.getUser().getUserId())
+                        .orElseThrow(() -> new RuntimeException("User not found")));
+                leaveInfo.setLeaveReason(attendanceDto.getLeaveReason());
+                this.leaveService.addLeaveForm(leaveInfo);
+            }
         }
     }
 

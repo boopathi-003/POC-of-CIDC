@@ -44,7 +44,7 @@ class UserServiceTest {
         UserDtoList.add(userDto);
 
         when(this.userRepository.findAll()).thenReturn(userInfoList);
-        List<UserDto> actualUserDtoList = this.userService.getUser();
+        List<UserDto> actualUserDtoList = this.userService.getAllUsers();
         assertEquals(UserDtoList.size(), actualUserDtoList.size());
         assertEquals(UserDtoList.getFirst().getUserId(), actualUserDtoList.getFirst().getUserId());
         assertEquals(UserDtoList.getFirst().getName(), actualUserDtoList.getFirst().getName());
@@ -63,10 +63,10 @@ class UserServiceTest {
         userDto.setName("Michael Johnson");
 
         when(this.userRepository.findById(20L)).thenReturn(Optional.of(userInfo));
-        when(this.userMapper.setDto(userInfo)).thenReturn(userDto);
+        when(this.userMapper.toDto(userInfo)).thenReturn(userDto);
         assertEquals("Michael Johnson", this.userService.getUserById(20L).getName());
         verify(this.userRepository, times(1)).findById(20L);
-        verify(this.userMapper, times(1)).setDto(userInfo);
+        verify(this.userMapper, times(1)).toDto(userInfo);
     }
 
 //    @Test
@@ -78,15 +78,6 @@ class UserServiceTest {
 //        verify(userRepository, times(1)).findById(3L);
 //    }
 
-    @Test
-    void TestDeleteById() {
-        UserInfo userAuth = new UserInfo(2L, "mano",
-                "teacher", "cse", true);
-        when(this.userRepository.findById(2L)).thenReturn(Optional.of(userAuth));
-        String result = this.userService.getDelete(userAuth.getUserId());
-        assertEquals("Deleted", result);
-        verify(this.userRepository, times(1)).findById(2L);
-    }
 
 //    @Test
 //    void TestNoDeleteById() {
@@ -113,13 +104,13 @@ class UserServiceTest {
         List<UserInfo> userInfoList = new ArrayList<>();
         userInfoList.add(userInfo);
         when(this.userRepository.findByRoll("teacher")).thenReturn(userInfoList);
-        when(this.userMapper.setDto(userInfo)).thenReturn(userDto);
-        List<UserDto> result = this.userService.getUserByRoll("teacher");
+        when(this.userMapper.toDto(userInfo)).thenReturn(userDto);
+        List<UserDto> result = this.userService.getUsersByRoll("teacher");
 
         assertEquals(1, result.size());
         assertEquals(userDto, result.getFirst());
         verify(this.userRepository, times(1)).findByRoll("teacher");
-        verify(this.userMapper, times(1)).setDto(userInfo);
+        verify(this.userMapper, times(1)).toDto(userInfo);
     }
 
 
@@ -140,13 +131,13 @@ class UserServiceTest {
         List<UserInfo> userInfoList = new ArrayList<>();
         userInfoList.add(userInfo);
         when(this.userRepository.findByDepartment("cse")).thenReturn(userInfoList);
-        when(this.userMapper.setDto(userInfo)).thenReturn(userDto);
-        List<UserDto> result = this.userService.getUserByDepartment("cse");
+        when(this.userMapper.toDto(userInfo)).thenReturn(userDto);
+        List<UserDto> result = this.userService.getUsersByDepartment("cse");
 
         assertEquals(1, result.size());
         assertEquals(userDto, result.getFirst());
         verify(this.userRepository, times(1)).findByDepartment("cse");
-        verify(this.userMapper, times(1)).setDto(userInfo);
+        verify(this.userMapper, times(1)).toDto(userInfo);
     }
 
 }

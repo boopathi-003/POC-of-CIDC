@@ -69,7 +69,7 @@ public class UserAuthService {
             if (user == null) {
                 throw new UserNotFoundException("User not found");
             }
-            if (!user.getIsActive()) {
+            if (!user.isActive()) {
                 throw new InvalidException("User account is inactive.");
             }
 

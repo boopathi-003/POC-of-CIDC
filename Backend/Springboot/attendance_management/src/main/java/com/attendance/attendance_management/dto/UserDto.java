@@ -1,12 +1,6 @@
 package com.attendance.attendance_management.dto;
 
-
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-
-import java.util.Objects;
+import lombok.*;
 
 @Getter
 @Setter
@@ -17,24 +11,9 @@ public class UserDto {
     private String name;
     private String roll;
     private String department;
-    private Boolean isActive;
-    private Boolean isMarked;
+    private boolean isActive;
+    private boolean isMarked;
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        UserDto userDto = (UserDto) o;
-        return Objects.equals(userId, userDto.userId) &&
-                Objects.equals(name, userDto.name) &&
-                Objects.equals(roll, userDto.roll) &&
-                Objects.equals(department, userDto.department);
+    public UserDto(long l, String john, String teacher, String cse, String aTrue) {
     }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(userId, name, roll, department);
-    }
-
-
 }

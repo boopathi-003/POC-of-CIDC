@@ -14,12 +14,18 @@ public class LeaveMapper {
 
 
     public LeaveDto setDto(final LeaveInfo leaveInfo) {
-        LeaveDto leaveDto = new LeaveDto();
-        leaveDto.setLeaveId(leaveInfo.getLeaveId());
-        leaveDto.setLeaveDate(leaveInfo.getLeaveDate());
-        leaveDto.setUser(leaveInfo.getUser());
-        leaveDto.setReason(leaveInfo.getLeaveReason());
-        return leaveDto;
+//        LeaveDto leaveDto = new LeaveDto();
+//        leaveDto.setLeaveId(leaveInfo.getLeaveId());
+//        leaveDto.setLeaveDate(leaveInfo.getLeaveDate());
+//        leaveDto.setUser(leaveInfo.getUser());
+//        leaveDto.setReason(leaveInfo.getLeaveReason());
+//        return leaveDto;
+        return new LeaveDto(
+                leaveInfo.getLeaveId(),
+                leaveInfo.getUser(),
+                leaveInfo.getLeaveDate(),
+                leaveInfo.getLeaveReason()
+        );
     }
 
     public List<LeaveDto> setDtoList(final List<LeaveInfo> leaveInfoList) {
